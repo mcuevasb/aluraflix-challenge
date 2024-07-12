@@ -1,0 +1,31 @@
+.video-card{
+    background-color: black;
+    box-shadow: 0 0 10px 5px #48abe0;
+    color: white;
+    border-radius: 20px;
+    font-family: Roboto;
+    font-weight: bold;
+    display: flex;
+    flex-flow: column;
+    margin: 20px;
+}
+.img-card{
+    width: 100%;
+}
+
+.icon-card{
+    width: 25px;
+    height: 25px;
+    margin: auto;
+    margin-right: 10px;
+    display: block;
+}
+
+.card-text{
+    display: flex;
+    justify-content: space-evenly;    
+}
+
+.inner-text{
+    display: flex;
+}

@@ -1,0 +1,7 @@
+.cat-list{
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: wrap;
+    margin-top: 20px;    
+}

@@ -1,0 +1,21 @@
+
+.videos-cat{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.cat-title{
+    font-size: x-large;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    background-color: blue;
+    width: 30%;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.video-list{
+    display: flex;
+}
