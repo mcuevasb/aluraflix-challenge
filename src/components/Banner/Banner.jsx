@@ -12,9 +12,9 @@ const Banner = () => {
                     <div class="banner-title">FRONT END</div>
                     <div class="banner-subtitle">Challenge React</div>
                     <div class="banner-text">
-                        Este challenge es una forma de aprendizaje. Es un mecanusmo donde
+                        Este challenge es una forma de aprendizaje. Es un mecanismo donde
                         podrás comprometerte en la resolución de un problema para poder
-                        aplicar todos los conocimientos adquiridos en la formación de React
+                        aplicar todos los conocimientos adquiridos en la formación de React.
                     </div>
                 </div>
                 <div>
