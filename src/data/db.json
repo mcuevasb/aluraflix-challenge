@@ -1,0 +1,54 @@
+{
+  "categorias": [
+    {
+      "id": "1",
+      "nombre": "FRONTEND",
+      "color": "#68D0FF"
+    },
+    {
+      "id": "2",
+      "nombre": "BACKEND",
+      "color": "#2271D1"
+    },
+    {
+      "id": "3",
+      "nombre": "INOVACION Y GESTION",
+      "color": "#FFBA05"
+    }
+  ],
+
+  "videos": [
+    {
+      "id": "1",
+      "titulo": "¿Qué es SQL y NOSQL?",
+      "categoria": "2",
+      "imagen": "https://i.ytimg.com/vi/cLLKVd5CNLc/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLCJWcJwSGl3ZCLo5_4QlWjaWm0HUA",
+      "video": "https://youtu.be/cLLKVd5CNLc?feature=shared",
+      "descripcion": "¿Cuáles son las diferencias entre una estructura de datos relacional (SQL) y una no relacional (NoSQL) y cuáles son las principales ventajas de cada una? Álvaro Camacho lo explica en este vídeo."
+    },
+    {
+      "id": "2",
+      "titulo": "¿Qué es Javascript?",
+      "categoria": "1",
+      "imagen": "https://i.ytimg.com/vi/GJfOSoaXk4s/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLCMKj274DlBkQW--nqBsWetvCLMVA",
+      "video": "https://youtu.be/GJfOSoaXk4s?feature=shared",
+      "descripcion": "Descripcion Generica 2"
+    },
+    {
+      "id": "3",
+      "titulo": "¿Qué son las Soft Skills?",
+      "categoria": "3",
+      "imagen": "https://i.ytimg.com/vi/vhwspfvI52k/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLCZ8mv_R1_AAV9WAUoZx5PrI6TbTA",
+      "video": "https://youtu.be/xdzz3_WqFmE?feature=shared",
+      "descripcion": "Descripcion Generica 3"
+    },
+    {
+      "id": "4",
+      "titulo": "Frameworks de Front End",
+      "categoria": "1",
+      "imagen": "https://i.ytimg.com/vi/UNeKzI2WHgQ/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLCdrXojG5j5ioIz3FdxoUulqMLVDA",
+      "video": "https://youtu.be/UNeKzI2WHgQ?feature=shared",
+      "descripcion": "Descripcion Generica 3"
+    }
+  ]
+}

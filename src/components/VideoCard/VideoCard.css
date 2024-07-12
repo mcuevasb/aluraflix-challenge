@@ -5,12 +5,15 @@
     border-radius: 20px;
     font-family: Roboto;
     font-weight: bold;
+    font-size: small;
     display: flex;
     flex-flow: column;
     margin: 20px;
 }
 .img-card{
-    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 300px;
 }
 
 .icon-card{

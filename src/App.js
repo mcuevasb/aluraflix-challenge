@@ -1,6 +1,6 @@
-import Header from "./components/Header/Header"
-import Banner from "./components/Banner/Banner"
-import Videos from "./components/Videos/Videos"
+import Header from "./components/Header/Header";
+import Banner from "./components/Banner/Banner";
+import Videos from "./components/Videos/Videos";
 
 function App() {
   return (
@@ -8,9 +8,7 @@ function App() {
       <Header></Header>
       <Banner></Banner>
       <Videos></Videos>
-      
     </div>
-
   );
 }
 

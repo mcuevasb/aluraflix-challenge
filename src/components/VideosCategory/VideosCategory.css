@@ -2,20 +2,23 @@
 .videos-cat{
     background-color: white;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .cat-title{
     font-size: x-large;
     font-weight: bold;
+    background-color: black;
     color: white;
     text-align: center;
-    background-color: blue;
-    width: 30%;
-    padding: 10px;
+    width: 22%;
+    min-width: 200px;
     border-radius: 25px;
+    margin: 20px;
+    margin-bottom: 0%;
 }
 
 .video-list{
     display: flex;
+    margin-bottom: 30px;
 }

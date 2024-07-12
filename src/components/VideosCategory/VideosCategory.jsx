@@ -1,14 +1,17 @@
 import CategoryList from "../CategoryList/CategoryList"
 import styles from "./VideosCategory.css"
 
-const VideosCategory = () => {
+
+
+const VideosCategory = (props) => {
+
     return (
-        <div classname="videos-cat">
-            <div class="cat-title">
-                <p> FRONT END</p>
+        <div class="videos-cat">
+            <div class="cat-title" style={{backgroundColor:props.color}}>
+                <p>{props.nombre}</p>
             </div>
             <div class="video-list">
-                <CategoryList />
+                <CategoryList id={props.id}/>
             </div>
         </div>
     )

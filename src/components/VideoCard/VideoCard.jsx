@@ -1,13 +1,14 @@
 import styles from "./VideoCard.css"
-import videocard1 from "../../img/videocard1.png"
 import trash from "../../img/trash.png"
 import edit from "../../img/edit.png"
 
-const VideoCard = () =>{
-    return(
+const VideoCard = (props) => {
+
+
+    return (
         <div class="video-card">
             <div>
-                <img class="img-card" src={videocard1} alt="video" />
+                <img class="img-card" src={props.imagen} alt={props.imagen} />
             </div>
             <div class="card-text">
                 <div class="inner-text">
@@ -20,7 +21,7 @@ const VideoCard = () =>{
                 </div>
             </div>
         </div>
-        
+
     )
 
 }
