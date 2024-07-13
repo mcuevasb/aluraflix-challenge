@@ -31,4 +31,5 @@
 
 .inner-text{
     display: flex;
+    cursor: pointer;
 }

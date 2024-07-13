@@ -11,7 +11,7 @@ const VideosCategory = (props) => {
                 <p>{props.nombre}</p>
             </div>
             <div class="video-list">
-                <CategoryList id={props.id}/>
+                <CategoryList toggleModalVisible={props.toggleModalVisible} setIdVideoSeleccionado={props.setIdVideoSeleccionado} id={props.id}/>
             </div>
         </div>
     )
