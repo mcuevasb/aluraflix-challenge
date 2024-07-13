@@ -11,13 +11,24 @@ const VideoCard = (props) => {
         props.toggleModalVisible(props.categoria)
     }
 
+    const borraVideo = () => {
+
+        const url = "http://localhost:5000/videos/" + props.id
+
+        fetch(url, {
+            method: 'DELETE'
+        })
+            .then(response => {})
+            .catch(error => {});
+    }
+
     return (
         <div class="video-card">
             <div>
                 <a   ><img class="img-card" src={props.imagen} alt={props.imagen}/></a>
             </div>
             <div class="card-text">
-                <div class="inner-text">
+                <div class="inner-text" onClick={borraVideo}>
                     <img class="icon-card" src={trash} />
                     <p>BORRAR</p>
                 </div>
