@@ -1,0 +1,19 @@
+:root{
+    --dark-blue: #03122F;
+    --blue: #2271D1;
+}
+
+.modal-container{
+    background-color: var(--dark-blue);
+    width: 50%;
+    display: flex;
+    flex-flow: column;
+    padding: 2rem;
+}
+
+.modal-title{
+    color: white;
+    font-family: Roboto;
+    font-size: larger;
+    margin-bottom: 15px;
+}

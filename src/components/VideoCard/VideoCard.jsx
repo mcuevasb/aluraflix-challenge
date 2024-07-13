@@ -8,7 +8,7 @@ const VideoCard = (props) => {
     return (
         <div class="video-card">
             <div>
-                <img class="img-card" src={props.imagen} alt={props.imagen} />
+                <a   ><img class="img-card" src={props.imagen} alt={props.imagen}/></a>
             </div>
             <div class="card-text">
                 <div class="inner-text">
