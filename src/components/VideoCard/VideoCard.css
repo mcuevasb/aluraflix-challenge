@@ -14,6 +14,7 @@
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     width: 300px;
+    cursor: pointer;
 }
 
 .icon-card{

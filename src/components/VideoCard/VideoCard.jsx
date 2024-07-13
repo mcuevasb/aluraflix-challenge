@@ -8,7 +8,12 @@ const VideoCard = (props) => {
     const setModal = () => {
         
         props.setIdVideoSeleccionado(props.id)
-        props.toggleModalVisible(props.categoria)
+        props.toggleModalVisible(true)
+    }
+
+    const setPlayer = () => {
+        props.setIdVideoSeleccionado(props.id)
+        props.togglePlayerVisible(true)
     }
 
     const borraVideo = () => {
@@ -25,7 +30,7 @@ const VideoCard = (props) => {
     return (
         <div class="video-card">
             <div>
-                <a   ><img class="img-card" src={props.imagen} alt={props.imagen}/></a>
+                <a   ><img class="img-card" src={props.imagen} alt={props.imagen} onClick={setPlayer}/></a>
             </div>
             <div class="card-text">
                 <div class="inner-text" onClick={borraVideo}>

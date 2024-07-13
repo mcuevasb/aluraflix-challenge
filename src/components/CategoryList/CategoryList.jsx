@@ -9,7 +9,7 @@ const CategoryList = (props) => {
 
     return (
         <div class="cat-list">
-            {dataCategoria.map((video) => { return <VideoCard toggleModalVisible={props.toggleModalVisible} setIdVideoSeleccionado={props.setIdVideoSeleccionado} {...video} ></VideoCard> })}
+            {dataCategoria.map((video) => { return <VideoCard toggleModalVisible={props.toggleModalVisible} togglePlayerVisible={props.togglePlayerVisible} setIdVideoSeleccionado={props.setIdVideoSeleccionado} {...video} ></VideoCard> })}
         </div>
     )
 }

@@ -57,7 +57,7 @@ const Modal = (props) => {
             <div class="modal-container">
                 <div class="modal-title">
                     <p>Editar Card:</p>
-                    <img src={cross} onClick={props.toggleModalVisible} />
+                    <img src={cross} class="close-modal" onClick={props.toggleModalVisible} />
                 </div>
                 <form>
                     <div>

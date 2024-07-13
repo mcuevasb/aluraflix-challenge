@@ -22,7 +22,7 @@
       "titulo": "¿Qué es SQL y NOSQL?",
       "categoria": "2",
       "imagen": "https://i.ytimg.com/vi/cLLKVd5CNLc/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLCJWcJwSGl3ZCLo5_4QlWjaWm0HUA",
-      "video": "https://youtu.be/cLLKVd5CNLc?feature=shared",
+      "video": "https://www.youtube.com/embed/cLLKVd5CNLc?si=JU1zToIo24qUrBVa",
       "descripcion": "¿Cuáles son las diferencias entre una estructura de datos relacional (SQL) y una no relacional (NoSQL) y cuáles son las principales ventajas de cada una? Álvaro Camacho lo explica en este vídeo."
     },
     {
@@ -30,24 +30,32 @@
       "titulo": "¿Qué es Javascript?",
       "categoria": "1",
       "imagen": "https://i.ytimg.com/vi/GJfOSoaXk4s/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLCMKj274DlBkQW--nqBsWetvCLMVA",
-      "video": "https://youtu.be/GJfOSoaXk4s?feature=shared",
-      "descripcion": "¿Qué es Javascript?"
+      "video": "https://www.youtube.com/embed/GJfOSoaXk4s?si=HmEGKbJyAAhkyHhW",
+      "descripcion": "JavaScript: ¿qué es y cómo se hizo este lenguaje que genera muchas discusiones y debates entre la gente del área de desarrollo? Genesys y Gabriela nos hablan exactamente de esto en este Alura Tips. "
     },
     {
       "id": "3",
       "titulo": "¿Qué son las Soft Skills?",
       "categoria": "3",
       "imagen": "https://i.ytimg.com/vi/vhwspfvI52k/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLCZ8mv_R1_AAV9WAUoZx5PrI6TbTA",
-      "video": "https://youtu.be/xdzz3_WqFmE?feature=shared",
-      "descripcion": "Descripcion Generica 3"
+      "video": "https://www.youtube.com/embed/vhwspfvI52k?si=F2cY9i8eafNHd18V",
+      "descripcion": "¿Qué son las Softskills y por qué es tan importante desarrollarlas para posicionarse en el mercado laboral? En este video de Alura Tips, Pri Stuani nos habla de las habilidades más buscadas por las empresas en sus profesionales y cómo las Soft Skills te ayudan en el día a día."
     },
     {
       "id": "4",
       "titulo": "Frameworks de Front End",
       "categoria": "1",
       "imagen": "https://i.ytimg.com/vi/UNeKzI2WHgQ/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLCdrXojG5j5ioIz3FdxoUulqMLVDA",
-      "video": "https://youtu.be/UNeKzI2WHgQ?feature=shared",
-      "descripcion": "Descripcion Generica 3"
+      "video": "https://www.youtube.com/embed/UNeKzI2WHgQ?si=Wi4RdTIMajHkSG2S",
+      "descripcion": "¿Quieres conocer sobre los frameworks más utilizados en el mercado hoy en día? En este video nuestro instructor de Front End nos explicarás cuáles son los frameworks de Front más conocidos y las diferencias entre ellos."
+    },
+    {
+      "id": "5",
+      "titulo": "¿Por qué utilizar Java actualmente?",
+      "categoria": "2",
+      "imagen": "https://i.ytimg.com/vi/3kNuK-XAHEY/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLBeMmLugD2LrG_peaHWkmteK_YgfQ",
+      "video": "https://www.youtube.com/embed/3kNuK-XAHEY?si=MJCXpBFKdNb3syh6",
+      "descripcion": "Java es una de las más conocidas tecnologías y se utiliza en millones de aplicaciones de software en todo el mundo. En este video, hablaremos de lo último en el lenguaje y la plataforma Java y de por qué debería ser tu elección para un próximo proyecto."
     }
   ]
 }
