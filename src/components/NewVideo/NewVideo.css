@@ -1,10 +1,5 @@
-:root {
-    --dark-blue: #03122F;
-    --blue: #2271D1;
-}
-
-.overlay {
-    background-color: rgba(0, 0, 0, 70%);
+.nv-overlay {
+    background-color: rgba(0, 0, 0, 100%);
     position: fixed;
     top: 0;
     bottom: 0;
@@ -12,8 +7,18 @@
     right: 0;
 }
 
-.modal-container {
+.nv-close-overlay{
+    position: fixed;
+    display: flex;
+    width: auto;
+    top: 2%;
+    right: 2%;
+    cursor: pointer;
+}
+
+.nv-container {
     background-color: var(--dark-blue);
+    color:white;
     display: flex;
     flex-flow: column;
     justify-content: space-evenly;
@@ -21,29 +26,26 @@
     padding: 20px;
     
     left: 25%;
-    top: 10%;
+    top: 5%;
     width: 50%;
-    height: 80%;
+    height: 85%;
     overflow: auto;
 }
 
-.modal-title {
-    color: white;
+.nv-input {
+    width: 80%;
     font-family: Roboto;
-    font-size: larger;
-    margin-bottom: 15px;
-    display: flex;
-    justify-content: space-evenly;
-    flex-flow: row;
+    color:white;
+    font-size: small;
+    padding: 10px;
+    border-radius: 5px;
+    border-color: var(--blue);
+    border-style: solid;
+    border-width: 2px;
+    background-color: var(--dark-blue);
 }
 
-.modal-buttons {
-
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.modal-button {
+.nv-button{
     border-color: var(--blue);
     background-color: var(--dark-blue);
     color: white;
@@ -53,9 +55,6 @@
     border-style: solid;
     border-width: 2px;
     border-radius: 10px;
+    margin: 5px;
 }
 
-.close-modal{
-    width: auto;
-    height: auto;
-}

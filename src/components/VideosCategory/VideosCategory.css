@@ -1,6 +1,11 @@
+:root{
+    --dark-grey: #1D1D1D;
+    --medium-gray: #3F3F3F;
+}
+
 
 .videos-cat{
-    background-color: white;
+    background-color: var(--dark-grey);
     display: flex;
     flex-direction: column;
 }
@@ -19,6 +24,7 @@
 }
 
 .video-list{
+    background-color: var(--dark-grey);
     display: flex;
     margin-bottom: 30px;
 }

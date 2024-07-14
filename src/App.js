@@ -5,31 +5,50 @@ import Banner from "./components/Banner/Banner";
 import Videos from "./components/Videos/Videos";
 import Modal from "./components/Modal/Modal";
 import Player from "./components/Player/Player";
+import NuevoVideo from "./components/NewVideo/NewVideo";
 
 function App() {
+  const [modalVisible, setModalVisible] = useState(false);
+  const [playerVisible, setPlayerVisible] = useState(false);
+  const [newVideoVisible, setNewVideoVisible] = useState(false);
+  const [idVideoSeleccionado, setIdVideoSeleccionado] = useState();
 
-  const [modalVisible, setModalVisible] = useState(false)
-  const [playerVisible, setPlayerVisible] = useState(false)
-  const [idVideoSeleccionado, setIdVideoSeleccionado] = useState()
-
-  
   const toggleModalVisible = () => {
-    setModalVisible(!modalVisible)
-  }
+    setModalVisible(!modalVisible);
+  };
 
   const togglePlayerVisible = () => {
-    setPlayerVisible(!playerVisible)
-  }
+    setPlayerVisible(!playerVisible);
+  };
+
+  const toggleNewVideoVisible = () => {
+    setNewVideoVisible(!newVideoVisible);
+  };
 
   return (
-
     <div>
-      <Header />
+      <Header toggleNewVideoVisible={toggleNewVideoVisible} />
       <Banner />
-      <Videos toggleModalVisible={toggleModalVisible} togglePlayerVisible={togglePlayerVisible} setIdVideoSeleccionado={setIdVideoSeleccionado}/>
-      {modalVisible? <Modal idVideoSeleccionado={idVideoSeleccionado} toggleModalVisible={toggleModalVisible} /> : <></>} 
-      {playerVisible? <Player idVideoSeleccionado={idVideoSeleccionado} togglePlayerVisible={togglePlayerVisible} /> : <></>} 
-      
+      <Videos
+        toggleModalVisible={toggleModalVisible}
+        togglePlayerVisible={togglePlayerVisible}
+        setIdVideoSeleccionado={setIdVideoSeleccionado}
+      />
+      {modalVisible && (
+        <Modal
+          idVideoSeleccionado={idVideoSeleccionado}
+          toggleModalVisible={toggleModalVisible}
+        />
+      )}
+      {playerVisible && (
+        <Player
+          idVideoSeleccionado={idVideoSeleccionado}
+          togglePlayerVisible={togglePlayerVisible}
+        />
+      )}
+      {newVideoVisible && (
+        <NuevoVideo toggleNewVideoVisible={toggleNewVideoVisible}></NuevoVideo>
+      )}
     </div>
   );
 }

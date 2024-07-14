@@ -1,5 +1,5 @@
 .videos{
-    background-color: white;
+    background-color: black;
     display:flex;
     flex-flow: column;
     gap: 1rem;

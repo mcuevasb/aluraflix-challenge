@@ -60,6 +60,7 @@ const Modal = (props) => {
                     <img src={cross} class="close-modal" onClick={props.toggleModalVisible} />
                 </div>
                 <form>
+
                     <div>
 
                         <ModalInput setValor={setTitulo} value={titulo} name="titulo" tipo="text" titulo="Título" placeholder="Agrega el título del video" />
@@ -70,9 +71,10 @@ const Modal = (props) => {
 
                     </div>
                     <div class="modal-buttons">
-                        <button class="modal-button" onClick={updateData}>GUARDAR</button>
+                        <button class="modal-button" onClick={updateData}>Guardar</button>
                         <input type="reset" class="modal-button" onClick={resetData}></input>
                     </div>
+
                 </form>
             </div>
         </>

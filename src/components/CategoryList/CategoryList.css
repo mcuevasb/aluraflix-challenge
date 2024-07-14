@@ -1,5 +1,10 @@
+:root{
+    --dark-grey: #1D1D1D;
+    --medium-gray: #3F3F3F;
+}
+
 .cat-list{
-    background-color: white;
+    background-color: var(--dark-grey);
     display: flex;
     justify-content: space-evenly;
     flex-flow: wrap;

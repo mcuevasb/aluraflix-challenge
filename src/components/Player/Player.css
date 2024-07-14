@@ -21,4 +21,5 @@ iframe{
     width: auto;
     top: 2%;
     right: 2%;
+    cursor: pointer;
 }
