@@ -15,7 +15,7 @@ iframe{
     right: 0;
 }
 
-.close-overlay{
+.close_overlay{
     position: fixed;
     display: flex;
     width: auto;

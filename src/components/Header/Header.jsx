@@ -1,12 +1,12 @@
 import aluraflixlogo from "../../img/aluraflix-logo.png"
-import styles from "./Header.css"
+import styles from "./Header.module.css"
 
 const Header = (props) =>{
 
     return <section>
             <div>
                 <img src={aluraflixlogo}></img></div>
-            <div class="buttons">
+            <div className={styles.buttons}>
                 <button>Home</button>
                 <button onClick={props.toggleNewVideoVisible}>Nuevo Video</button>
             </div>

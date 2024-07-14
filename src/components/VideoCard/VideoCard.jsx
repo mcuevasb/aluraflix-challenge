@@ -1,7 +1,7 @@
-import styles from "./VideoCard.css"
 import trash from "../../img/trash.png"
 import edit from "../../img/edit.png"
 import { useState } from "react"
+import styles from "./VideoCard.module.css"
 
 const VideoCard = (props) => {
 
@@ -28,17 +28,17 @@ const VideoCard = (props) => {
     }
 
     return (
-        <div class="video-card">
+        <div className={styles.video_card}>
             <div>
-                <a   ><img class="img-card" src={props.imagen} alt={props.imagen} onClick={setPlayer}/></a>
+                <a   ><img className={styles.img_card} src={props.imagen} alt={props.imagen} onClick={setPlayer}/></a>
             </div>
-            <div class="card-text">
-                <div class="inner-text" onClick={borraVideo}>
-                    <img class="icon-card" src={trash} />
+            <div className={styles.card_text}>
+                <div className={styles.inner_text} onClick={borraVideo}>
+                    <img className={styles.icon_card} src={trash} />
                     <p>BORRAR</p>
                 </div>
-                <div class="inner-text" onClick={setModal}>
-                    <img class="icon-card" src={edit} />
+                <div className={styles.inner_text} onClick={setModal}>
+                    <img className={styles.icon_card} src={edit} />
                     <p>EDITAR</p>
                 </div>
             </div>

@@ -1,0 +1,45 @@
+:root{
+    --dark-grey: #1D1D1D;
+    --medium-gray: #3F3F3F;
+}
+
+
+.videos_cat{
+    background-color: var(--dark-grey);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.cat_title{
+    font-size: x-large;
+    font-weight: bold;
+    background-color: var(--dark-grey);
+    color: white;
+    width: 100%;
+    min-width: 200px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding-left: 1rem;
+    margin-left: 0;
+    margin-right: 0;
+
+    
+}
+
+.video_list{
+    width: 100%;
+    min-width: 200px;
+    background-color: var(--dark-grey);
+    display: flex;
+    margin-bottom: 30px;
+    border-style: solid;
+    border-top-width: 0px;
+    border-bottom-width: 5px;
+    border-left-width: 5px;
+    border-right-width: 5px;
+    border-color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}

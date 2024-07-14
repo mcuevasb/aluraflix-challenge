@@ -1,4 +1,9 @@
-.nv-overlay {
+:root{
+    --dark-grey: #1D1D1D;
+    --medium-gray: #3F3F3F;
+}
+
+.nv_overlay {
     background-color: rgba(0, 0, 0, 100%);
     position: fixed;
     top: 0;
@@ -7,7 +12,7 @@
     right: 0;
 }
 
-.nv-close-overlay{
+.nv_closeoverlay{
     position: fixed;
     display: flex;
     width: auto;
@@ -16,7 +21,7 @@
     cursor: pointer;
 }
 
-.nv-container {
+.nv_container {
     background-color: var(--dark-blue);
     color:white;
     display: flex;
@@ -32,7 +37,7 @@
     overflow: auto;
 }
 
-.nv-input {
+.nv_input {
     width: 80%;
     font-family: Roboto;
     color:white;
@@ -45,7 +50,7 @@
     background-color: var(--dark-blue);
 }
 
-.nv-button{
+.nv_button{
     border-color: var(--blue);
     background-color: var(--dark-blue);
     color: white;
@@ -58,3 +63,6 @@
     margin: 5px;
 }
 
+.nv_footer{
+    background-color: var(--dark-grey);
+}

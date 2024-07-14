@@ -1,4 +1,4 @@
-.video-card{
+.video_card{
     background-color: black;
     box-shadow: 0 0 10px 5px #48abe0;
     color: white;
@@ -10,14 +10,14 @@
     flex-flow: column;
     margin: 20px;
 }
-.img-card{
+.img_card{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     width: 300px;
     cursor: pointer;
 }
 
-.icon-card{
+.icon_card{
     width: 25px;
     height: 25px;
     margin: auto;
@@ -25,12 +25,12 @@
     display: block;
 }
 
-.card-text{
+.card_text{
     display: flex;
     justify-content: space-evenly;    
 }
 
-.inner-text{
+.inner_text{
     display: flex;
     cursor: pointer;
 }

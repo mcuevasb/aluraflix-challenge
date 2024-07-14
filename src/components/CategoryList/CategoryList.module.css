@@ -3,10 +3,10 @@
     --medium-gray: #3F3F3F;
 }
 
-.cat-list{
+.cat_list{
     background-color: var(--dark-grey);
     display: flex;
     justify-content: space-evenly;
     flex-flow: wrap;
-    margin-top: 20px;    
+    border-radius: 20px;
 }

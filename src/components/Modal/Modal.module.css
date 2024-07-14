@@ -3,7 +3,7 @@
     --blue: #2271D1;
 }
 
-.overlay {
+.modal_overlay {
     background-color: rgba(0, 0, 0, 70%);
     position: fixed;
     top: 0;
@@ -12,14 +12,13 @@
     right: 0;
 }
 
-.modal-container {
+.modal_container {
     background-color: var(--dark-blue);
     display: flex;
     flex-flow: column;
-    justify-content: space-evenly;
+    justify-content:center;
     position: fixed;
     padding: 20px;
-    
     left: 25%;
     top: 10%;
     width: 50%;
@@ -27,7 +26,7 @@
     overflow: auto;
 }
 
-.modal-title {
+.modal_title {
     color: white;
     font-family: Roboto;
     font-size: larger;
@@ -37,13 +36,13 @@
     flex-flow: row;
 }
 
-.modal-buttons {
+.modal_buttons {
 
     display: flex;
     justify-content: space-evenly;
 }
 
-.modal-button {
+.modal_button {
     border-color: var(--blue);
     background-color: var(--dark-blue);
     color: white;
@@ -55,7 +54,7 @@
     border-radius: 10px;
 }
 
-.close-modal{
+.close_modal{
     width: auto;
     height: auto;
 }

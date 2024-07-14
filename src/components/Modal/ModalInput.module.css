@@ -3,7 +3,7 @@
     --blue: #2271D1;
 }
 
-.input-container{
+.input_container{
     display: flex;
     flex-flow: column;
     padding: 15px;
@@ -20,7 +20,7 @@
 }
 
 
-.modal-input{
+.modal_input{
     width: 80%;
     font-family: Roboto;
     color:white;
@@ -30,6 +30,7 @@
     border-style: solid;
     border-width: 2px;
     background-color: var(--dark-blue);
+    padding: 10px;
 }
 
 option{

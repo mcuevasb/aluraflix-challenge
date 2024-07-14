@@ -1,7 +1,7 @@
 import ModalInput from "./ModalInput"
-import styles from "./Modal.css"
 import cross from "../../img/cross.png"
 import data from '../../data/db.json'
+import styles from "./Modal.module.css"
 import { useState } from "react"
 
 const Overlay = () => {
@@ -54,10 +54,10 @@ const Modal = (props) => {
     return (
         <>
             <Overlay />
-            <div class="modal-container">
-                <div class="modal-title">
+            <div className={styles.modal_container}>
+                <div className={styles.modal_title}>
                     <p>Editar Card:</p>
-                    <img src={cross} class="close-modal" onClick={props.toggleModalVisible} />
+                    <img src={cross} className={styles.close_modal} onClick={props.toggleModalVisible} />
                 </div>
                 <form>
 
@@ -70,9 +70,9 @@ const Modal = (props) => {
                         <ModalInput setValor={setDescripcion} value={descripcion} name="descripcion" tipo="textarea" titulo="Descripción" placeholder="Agrega una descripción para el video" />
 
                     </div>
-                    <div class="modal-buttons">
-                        <button class="modal-button" onClick={updateData}>Guardar</button>
-                        <input type="reset" class="modal-button" onClick={resetData}></input>
+                    <div className={styles.modal_buttons}>
+                        <button className={styles.modal_button} onClick={updateData}>Guardar</button>
+                        <input type="reset" className={styles.modal_button} onClick={resetData}></input>
                     </div>
 
                 </form>
