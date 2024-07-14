@@ -6,7 +6,7 @@
 .cat_list{
     background-color: var(--dark-grey);
     display: flex;
-    justify-content: space-evenly;
+    justify-content:flex-start;
     flex-flow: wrap;
     border-radius: 20px;
 }

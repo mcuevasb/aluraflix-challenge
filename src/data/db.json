@@ -56,6 +56,70 @@
       "imagen": "https://i.ytimg.com/vi/3kNuK-XAHEY/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLBeMmLugD2LrG_peaHWkmteK_YgfQ",
       "video": "https://www.youtube.com/embed/3kNuK-XAHEY?si=MJCXpBFKdNb3syh6",
       "descripcion": "Java es una de las más conocidas tecnologías y se utiliza en millones de aplicaciones de software en todo el mundo. En este video, hablaremos de lo último en el lenguaje y la plataforma Java y de por qué debería ser tu elección para un próximo proyecto."
+    },
+    {
+      "id": "6",
+      "titulo": "Tus primeros pasos estudiando programación",
+      "categoria": "1",
+      "imagen": "https://i.ytimg.com/vi/5K97MfYA1sw/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDh6LLBy0f6vIOiUsS8z7N5heZnqQ",
+      "video": "https://www.youtube.com/embed/5K97MfYA1sw?si=sBWcz116u47HZvpa",
+      "descripcion": "Quiero entrar en el mundo de la programción pero, ¿qué debo estudiar primero?, ¿necesito tener un título universitario para encontrar empleo?, ¿hay edad máxima para poder empezar a aprender a programar?"
+    },
+    {
+      "id": "7",
+      "titulo": "¿Cómo es el día a día de una Científica de Datos?",
+      "categoria": "2",
+      "imagen": "https://i.ytimg.com/vi/cOvpf3Q-ii4/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCsMCkXD8HN5nu-0VV_ovUroKj8fQ",
+      "video": "https://www.youtube.com/embed/cOvpf3Q-ii4?si=uWgo14jW1-xWYlGo",
+      "descripcion": "Ven y conoce como es el día a día laboral de una persona que trabaja con datos y como al interpretarlos genera valor para la empresa."
+    },
+    {
+      "id": "8",
+      "titulo": "¿Por qué utilizar React?",
+      "categoria": "1",
+      "imagen": "https://i.ytimg.com/vi/MnBNPA45NW8/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB5M_lr2tcyItTy3vLo8ornsnJ3HQ",
+      "video": "https://www.youtube.com/embed/MnBNPA45NW8?si=_C2wXKAA5W2wl6eP",
+      "descripcion": "En el Alura.tips de hoy platicaremos con Harland Lohora, instructor Front End en la plataforma de Alura Latam, sobre la librería JS de React. "
+    },
+    {
+      "id": "9",
+      "titulo": "¿Qué son las methodologies ágiles?",
+      "categoria": "3",
+      "imagen": "https://i.ytimg.com/vi/6N3OkLCfK-0/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDDq1E4lzcafq884jsP44Nu4YGTDg",
+      "video": "https://www.youtube.com/embed/6N3OkLCfK-0?si=F9Eo0AaNBxwY-5kU",
+      "descripcion": "En este video nuestra invitada, Andyara, nos explicará que són las muy conocidas hoy en día metodologias ágiles y nos comentará un poco sobre como aplicarlas y cuáles son los beneficios de utilizarlas en su equipo o empresa."
+    },
+    {
+      "id": "10",
+      "titulo": "Comunicación en el día a día",
+      "categoria": "3",
+      "imagen": "https://i.ytimg.com/vi/pOYyav4qx7o/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDiFIGRLE32pD3OK46zWuX9jARxOg",
+      "video": "https://www.youtube.com/embed/pOYyav4qx7o?si=9rT32eWToCr8gh_p",
+      "descripcion": "¿Quieres saber más? "
+    },
+    {
+      "id": "11",
+      "titulo": "Explorando el poder del Back-End en el Desarrollo Web",
+      "categoria": "2",
+      "imagen": "https://i.ytimg.com/vi/Z024LSCMqFk/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC-0yHQQfZ3Ga0vTHNGOv1N3MKHIw",
+      "video": "https://www.youtube.com/embed/Z024LSCMqFk?si=uyZB7xOJd-pJlP4D",
+      "descripcion": "¿Quieres saber más?"
+    },
+    {
+      "id": "12",
+      "titulo": "De la Creación al Borrado: Descubre el Poder del CRUD en el Desarrollo de Aplicaciones",
+      "categoria": "2",
+      "imagen": "https://i.ytimg.com/vi/jr_98HCSTZc/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDwxDOHjl6fxOl9IbxbFuBI-t8wXQ",
+      "video": "https://www.youtube.com/embed/jr_98HCSTZc?si=bBGPzjgjsadlQUj6",
+      "descripcion": "En este video, exploraremos el concepto de CRUD desde la perspectiva de un Desarrollador Front-End. Si eres un desarrollador web o estás interesado en el desarrollo de aplicaciones, es fundamental comprender cómo se realiza la creación, lectura, actualización y eliminación de datos en un sistema. Y eso es exactamente lo que aprenderás aquí."
+    },
+    {
+      "id": "13",
+      "titulo": "¡Prepárate para el Cambio! Tips para una Transición de Carrera exitosa",
+      "categoria": "3",
+      "imagen": "https://i.ytimg.com/vi/hqBddtoMn-k/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBbVc5crNoPJJetUf1SGbN-ECT5GA",
+      "video": "https://www.youtube.com/embed/hqBddtoMn-k?si=F_0HLCGYSYsSAif2",
+      "descripcion": "¿Algún dia ya pensaste cómo es hacer la transición de carrera para el área de tecnologia? ¿Sabes qué habilidades serán necesárias y cuáles son los desafíos que te esperan? En este Alura.tips, te invitamos a reflexionar sobre estas cuestiones junto a nuestros instructores Gabriela Aguiar y Eric Monné"
     }
   ]
 }

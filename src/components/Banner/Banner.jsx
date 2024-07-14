@@ -1,23 +1,37 @@
 import aluraflixbg from "../../img/aluraflix-bg.png";
-import player from "../../img/player.png"
 import styles from "./Banner.module.css";
+import data from "../../data/db.json"
+import { useState } from "react";
 
 const Banner = () => {
+
+    const randomId = Math.floor(Math.random()*data.videos.length)
+
+    console.log({randomId})
+
+    const [idVideo, setIdVideo] = useState(randomId.toString())
+
+    const [videoSeleccionado] = data.videos.filter((video) => { return video.id === idVideo })
+
+    const [titulo, setTitulo] = useState(videoSeleccionado.titulo)
+    const [categoria, setCategoria] = useState(videoSeleccionado.categoria)
+    const [imagen, setImagen] = useState(videoSeleccionado.imagen)
+    const [video, setVideo] = useState(videoSeleccionado.video)
+    const [descripcion, setDescripcion] = useState(videoSeleccionado.descripcion)
+
+    const [{nombre, color}] = data.categorias.filter((cat) => { return cat.id === categoria})
+
     return (
         <section className={styles.banner}>
-            <img className={styles.bg_img} src={aluraflixbg} />
+            <img className={styles.banner_background} src={aluraflixbg} />
             <div className={styles.banner_content}>
                 <div>
-                    <div className={styles.banner_title}>FRONT END</div>
-                    <div className={styles.banner_subtitle}>Challenge React</div>
-                    <div className={styles.banner_text}>
-                        Este challenge es una forma de aprendizaje. Es un mecanismo donde
-                        podrás comprometerte en la resolución de un problema para poder
-                        aplicar todos los conocimientos adquiridos en la formación de React.
-                    </div>
+                    <div style={{ backgroundColor: color }} className={styles.banner_title}>{nombre}</div>
+                    <div className={styles.banner_subtitle}>{titulo}</div>
+                    <div className={styles.banner_text}>{descripcion}</div>
                 </div>
                 <div>
-                    <img className={styles.player} src={player} />
+                    <img className={styles.banner_img} src={imagen} />
                 </div>
 
             </div>
