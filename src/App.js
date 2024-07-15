@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import Header from "./components/Header/Header";
 import Banner from "./components/Banner/Banner";
@@ -28,7 +28,10 @@ function App() {
   return (
     <div>
       <Header toggleNewVideoVisible={toggleNewVideoVisible} />
-      <Banner />
+      <Banner
+        setIdVideoSeleccionado={setIdVideoSeleccionado}
+        togglePlayerVisible={togglePlayerVisible}
+      />
       <Videos
         toggleModalVisible={toggleModalVisible}
         togglePlayerVisible={togglePlayerVisible}

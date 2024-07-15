@@ -19,6 +19,7 @@
 
 .banner_img {
     width: 40vh;
+    cursor: pointer;
 }
 
 .banner_content {

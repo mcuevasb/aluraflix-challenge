@@ -3,23 +3,24 @@ import styles from "./Banner.module.css";
 import data from "../../data/db.json"
 import { useState } from "react";
 
-const Banner = () => {
+const Banner = (props) => {
 
-    const randomId = Math.floor(Math.random()*data.videos.length)
-
-    console.log({randomId})
-
+    const randomId = Math.floor(Math.random() * (data.videos.length - 1))
     const [idVideo, setIdVideo] = useState(randomId.toString())
 
-    const [videoSeleccionado] = data.videos.filter((video) => { return video.id === idVideo })
+    const [[videoSeleccionado], setVideoSeleccionado] = useState(data.videos.filter((video) => { return video.id === idVideo }))
 
-    const [titulo, setTitulo] = useState(videoSeleccionado.titulo)
-    const [categoria, setCategoria] = useState(videoSeleccionado.categoria)
-    const [imagen, setImagen] = useState(videoSeleccionado.imagen)
-    const [video, setVideo] = useState(videoSeleccionado.video)
-    const [descripcion, setDescripcion] = useState(videoSeleccionado.descripcion)
+    const [{ titulo, categoria, imagen, video, descripcion }, setDatosVideo] = useState(videoSeleccionado)
 
-    const [{nombre, color}] = data.categorias.filter((cat) => { return cat.id === categoria})
+    const [{ nombre, color }] = data.categorias.filter((cat) => { return cat.id === categoria })
+
+
+    
+
+    const setPlayer = () => {
+        props.setIdVideoSeleccionado(idVideo)
+        props.togglePlayerVisible(true)
+    }
 
     return (
         <section className={styles.banner}>
@@ -31,9 +32,8 @@ const Banner = () => {
                     <div className={styles.banner_text}>{descripcion}</div>
                 </div>
                 <div>
-                    <img className={styles.banner_img} src={imagen} />
+                    <img className={styles.banner_img} src={imagen} onClick={setPlayer} />
                 </div>
-
             </div>
         </section>
     );
