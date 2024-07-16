@@ -4,6 +4,6 @@
 El reto para aplicar las funcionalidades aprendidas de React en la práctica.
 
 
-###Proyecto desplegado en Vercel:
+### Proyecto desplegado en Vercel:
 https://aluraflix-challenge-zeta.vercel.app/
 
