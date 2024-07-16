@@ -7,7 +7,6 @@ const Header = (props) =>{
             <div>
                 <img src={aluraflixlogo}></img></div>
             <div className={styles.buttons}>
-                <button>Home</button>
                 <button onClick={props.toggleNewVideoVisible}>Nuevo Video</button>
             </div>
         </section>

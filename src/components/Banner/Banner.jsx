@@ -1,21 +1,22 @@
 import aluraflixbg from "../../img/aluraflix-bg.png";
 import styles from "./Banner.module.css";
 import data from "../../data/db.json"
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Banner = (props) => {
 
-    const randomId = Math.floor(Math.random() * (data.videos.length - 1))
-    const [idVideo, setIdVideo] = useState(randomId.toString())
+    const [idVideo, setIdVideo] = useState("1")
 
-    const [[videoSeleccionado], setVideoSeleccionado] = useState(data.videos.filter((video) => { return video.id === idVideo }))
-
-    const [{ titulo, categoria, imagen, video, descripcion }, setDatosVideo] = useState(videoSeleccionado)
-
+    const [videoSeleccionado] = data.videos.filter((video) => { return video.id === idVideo })
+    const { titulo, categoria, imagen, video, descripcion } = videoSeleccionado
     const [{ nombre, color }] = data.categorias.filter((cat) => { return cat.id === categoria })
 
 
-    
+    useEffect(()=>{
+
+        setIdVideo(Math.floor((Math.random() * (data.videos.length-1)+1)).toString())
+        
+    }, [])
 
     const setPlayer = () => {
         props.setIdVideoSeleccionado(idVideo)
