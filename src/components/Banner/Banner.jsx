@@ -1,6 +1,6 @@
 import aluraflixbg from "../../img/aluraflix-bg.png";
 import styles from "./Banner.module.css";
-import data from "../../data/db.json"
+import data from "../../../db.json"
 import { useState } from "react";
 
 const Banner = (props) => {
