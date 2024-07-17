@@ -3,7 +3,7 @@
     --medium-gray: #3F3F3F;
     --color-categoria: #6BD1FF;
 }
-
+  
 .banner {
     position: relative;
     background-color: var(--dark-grey);
@@ -62,3 +62,13 @@
     font-size: small;
     border-radius: 10px;
 }
+
+
+@media (max-width: 480px){
+
+    .banner{
+        display: none;
+    }
+}
+
+

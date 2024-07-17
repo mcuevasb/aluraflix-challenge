@@ -21,14 +21,31 @@ section{
 
 button{
     font-family: Roboto;
-    font-size: large;
+    font-size:medium;
     color: white;
-    width: 150px;
+    
     background-color: var(--dark-grey);
-    border-radius: 10px;
-    box-shadow: 0 0 10px 5px #48abe0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 3px #48abe0;
 }
 
 button:hover{
     background-color: var(--medium-gray);
+}
+
+@media (max-width: 480px)  {
+
+    section{
+        align-items: center;
+        background-color:var(--dark-grey);
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    buttons{
+        width: 100%;
+    }
+
+    
 }
