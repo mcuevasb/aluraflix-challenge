@@ -8,7 +8,7 @@ const Videos = (props) =>{
         <section>
             <div className={styles.videos}>
             
-            {data.categorias.map((categoria)=>{return <VideosCategory toggleModalVisible={props.toggleModalVisible} togglePlayerVisible={props.togglePlayerVisible} setIdVideoSeleccionado={props.setIdVideoSeleccionado} {...categoria}></VideosCategory>})}
+            {data.categorias.map((categoria)=>{return <VideosCategory {...categoria}></VideosCategory>})}
 
             </div>
         </section>

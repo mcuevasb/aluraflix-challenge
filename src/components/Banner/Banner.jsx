@@ -1,7 +1,9 @@
 import aluraflixbg from "../../img/aluraflix-bg.png";
 import styles from "./Banner.module.css";
 import data from "../../data/db.json"
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
+
+import { VideoContext } from "../VideoContext/VideoContext";
 
 const Banner = (props) => {
 
@@ -11,6 +13,10 @@ const Banner = (props) => {
     const { titulo, categoria, imagen, video, descripcion } = videoSeleccionado
     const [{ nombre, color }] = data.categorias.filter((cat) => { return cat.id === categoria })
 
+    const [setIdVideoSeleccionado, togglePlayerVisible] = useContext(VideoContext)
+
+    console.log(setIdVideoSeleccionado);
+
 
     useEffect(()=>{
 
@@ -19,8 +25,8 @@ const Banner = (props) => {
     }, [])
 
     const setPlayer = () => {
-        props.setIdVideoSeleccionado(idVideo)
-        props.togglePlayerVisible(true)
+        setIdVideoSeleccionado(idVideo)
+        togglePlayerVisible(true)
     }
 
     return (

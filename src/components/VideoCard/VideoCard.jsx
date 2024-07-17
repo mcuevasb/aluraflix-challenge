@@ -1,19 +1,26 @@
+import { useContext } from "react"
+
 import trash from "../../img/trash.png"
 import edit from "../../img/edit.png"
 import { useState } from "react"
 import styles from "./VideoCard.module.css"
 
+import { VideoContext } from "../VideoContext/VideoContext"
+
 const VideoCard = (props) => {
 
+    const [setIdVideoSeleccionado, togglePlayerVisible, toggleModalVisible] = useContext(VideoContext)
+
+    
     const setModal = () => {
         
-        props.setIdVideoSeleccionado(props.id)
-        props.toggleModalVisible(true)
+        setIdVideoSeleccionado(props.id)
+        toggleModalVisible(true)
     }
 
     const setPlayer = () => {
-        props.setIdVideoSeleccionado(props.id)
-        props.togglePlayerVisible(true)
+        setIdVideoSeleccionado(props.id)
+        togglePlayerVisible(true)
     }
 
     const borraVideo = () => {
