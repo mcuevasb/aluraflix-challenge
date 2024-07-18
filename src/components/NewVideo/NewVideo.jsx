@@ -38,38 +38,42 @@ const NuevoVideo = (props) => {
     return (
         <>
             <div className={styles.nv_overlay}></div>
-            <img className={styles.nv_closeoverlay} src={cross} onClick={ props.toggleNewVideoVisible} />
+
             <div className={styles.nv_container}>
-                <div>
-                    <h1>Nuevo Video</h1>
-                    <h3>Complete el formulario para crear una nueva tarjeta de video</h3>
-                    <h2>Crear Tarjeta</h2>
-                </div>
-                <form>
+
+                <div className={styles.nv_title}>
+                    <div >
+                        <h1>Nuevo Video</h1>
+                        <h3>Complete el formulario para crear una nueva tarjeta de video</h3>
+                    </div>
                     <div>
-                        <h3>Título</h3>
+                        <img className={styles.nv_closeoverlay} src={cross} onClick={props.toggleNewVideoVisible} />
+                    </div>
+                </div>
+                <form className={styles.nv_form}>
+
+                        <h2>Crear Tarjeta</h2>
+                        <h4>Título</h4>
                         <input className={styles.nv_input} type="text" name="titulo" placeholder="Ingrese el título del video" required onChange={actualizarTitulo}></input>
-                        <h3>Categoría</h3>
+                        <h4>Categoría</h4>
                         <select className={styles.nv_input} name="categoria" required onChange={actualizarCategoria}>
                             <option value="" disabled selected>Seleccione una categoría</option>
                             {data.categorias.map((categoria) => { return <option value={categoria.id}>{categoria.nombre}</option> })}
                         </select>
-                        <h3>Imagen</h3>
+                        <h4>Imagen</h4>
                         <input className={styles.nv_input} type="text" name="imagen" placeholder="Ingrese enlace a la imagen" required onChange={actualizarImagen}></input>
-                        <h3>Video</h3>
+                        <h4>Video</h4>
                         <input className={styles.nv_input} type="text" name="video" placeholder="Ingrese enlace al video" required onChange={actualizarVideo}></input>
-                        <h3>Descripción</h3>
+                        <h4>Descripción</h4>
                         <input className={styles.nv_input} type="text" name="descripción" placeholder="Ingrese la descripción del video" required onChange={actualizarDescripcion}></input>
-                    </div>
-                    <div>
+
+                    <div className={styles.nv_buttons}>
                         <button className={styles.nv_button} name="guardar" onClick={insertaVideo}>Guardar</button>
                         <input className={styles.nv_button} type="reset" name="limpiar"></input>
                     </div>
                 </form>
                 <div className={styles.nv_footer}>
-                    <center>
                         <img src={aluraflixlogo}></img>
-                    </center>
                 </div>
             </div>
 

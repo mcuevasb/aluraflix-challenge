@@ -1,7 +1,7 @@
 import aluraflixbg from "../../img/aluraflix-bg.png";
 import styles from "./Banner.module.css";
 import data from "../../data/db.json"
-import { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useRef, useState } from "react";
 
 import { VideoContext } from "../VideoContext/VideoContext";
 
@@ -15,12 +15,15 @@ const Banner = (props) => {
 
     const [setIdVideoSeleccionado, togglePlayerVisible] = useContext(VideoContext)
 
-    console.log(setIdVideoSeleccionado);
-
-
+    const timer = useRef(0)
+    
     useEffect(()=>{
 
-        setIdVideo(Math.floor((Math.random() * (data.videos.length-1)+1)).toString())
+        timer.current = setInterval(() => {
+            setIdVideo(Math.floor((Math.random() * (data.videos.length-1)+1)).toString())
+        }, 3000)
+
+        
         
     }, [])
 
